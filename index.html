@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link href="./img/css/final.css" rel="stylesheet">
+    <link href="./dist/css/final.css" rel="stylesheet">
     <script>
         document.documentElement.classList.toggle('dark', localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches))
     </script>
@@ -15,7 +15,7 @@
         <div class="container">
             <div class="flex items-center justify-between relative">
                 <div class="px-4">
-                    <a href="#home" class="font-bold text-lg hover:text-secondry text-dark block py-6 dark:text-white">Ampan</a>
+                    <a href="#home" class="font-bold text-lg hover:text-secondry text-dark block py-6 dark:text-white ">Ampan</a>
                 </div>
                 <div class="flex items-center px-4">
                     <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
@@ -28,19 +28,19 @@
                         class="hidden absolute py-5 bg-secondry shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-teal-600 dark:shadow-teal-800 lg:dark:bg-transparent">
                         <ul class="block lg:flex">
                             <li class="group">
-                                <a href="#home" class="text-base text-dark py-2 mx-8 flex  group-hover:text-white dark:group-hover:text-dark dark:text-white lg:group-hover:text-secondry lg:dark:group-hover:text-secondry">Beranda</a>
+                                <a href="#home" class="text-sm font-semibold text-dark py-2 mx-8 flex  group-hover:text-white dark:group-hover:text-dark dark:text-white lg:group-hover:text-secondry lg:dark:group-hover:text-secondry">Beranda</a>
                             </li>
                             <li class="group">
-                                <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-white dark:group-hover:text-dark dark:text-white lg:group-hover:text-secondry lg:dark:group-hover:text-secondry">Tentang Saya</a>
+                                <a href="#about" class="text-sm font-semibold text-dark py-2 mx-8 flex group-hover:text-white dark:group-hover:text-dark dark:text-white lg:group-hover:text-secondry lg:dark:group-hover:text-secondry">Tentang Saya</a>
                             </li>
                             <li class="group">
-                                <a href="#portfolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-white dark:group-hover:text-dark dark:text-white lg:group-hover:text-secondry lg:dark:group-hover:text-secondry">Portfolio</a>
+                                <a href="#portfolio" class="text-sm font-semibold text-dark py-2 mx-8 flex group-hover:text-white dark:group-hover:text-dark dark:text-white lg:group-hover:text-secondry lg:dark:group-hover:text-secondry">Portfolio</a>
                             </li>
                             <li class="group">
-                                <a href="#clients" class="text-base text-dark py-2 mx-8 flex group-hover:text-white dark:group-hover:text-dark dark:text-white lg:group-hover:text-secondry lg:dark:group-hover:text-secondry">Clients</a>
+                                <a href="#clients" class="text-sm font-semibold text-dark py-2 mx-8 flex group-hover:text-white dark:group-hover:text-dark dark:text-white lg:group-hover:text-secondry lg:dark:group-hover:text-secondry">Clients</a>
                             </li>
                             <li class="group">
-                                <a href="#contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-white dark:group-hover:text-dark dark:text-white lg:group-hover:text-secondry lg:dark:group-hover:text-secondry">Contact</a>
+                                <a href="#contact" class="text-sm font-semibold text-dark py-2 mx-8 flex group-hover:text-white dark:group-hover:text-dark dark:text-white lg:group-hover:text-secondry lg:dark:group-hover:text-secondry">Contact</a>
                             </li>
                             <li class="mt-3 flex items-center pl-8 lg:mt-0">
                                 <div class="flex">
@@ -77,8 +77,8 @@
                         <a href="#contact" class=" text-base font-semibold text-white bg-dark py-3 px-8 dark:bg-deskripsi1  dark:text-dark rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Hubungi Saya</a>
                     </div>
                     <div class="w-full self-end px-4 lg:w-1/2">
-                        <div class="relative mt-10 lg:mt-9 lg:right-0">
-                            <img src="img/ampan.png" alt="ampan" class="relative z-10 max-w-full mx-auto">
+                        <div class="relative mt-10 lg:mt-9 lg:right-0 sm:mb-32">
+                            <img src="./dist/img/ampan.png" alt="ampan" class="relative z-10 max-w-full mx-auto" id="gambar">
                             <span class="absolute bottom-0 left-1/2 -translate-x-1/2 md:scale-125">
                                 <svg width="400" height="400" viewBox="0 0 200 200" 
                                 xmlns="http://www.w3.org/2000/svg">
@@ -103,7 +103,7 @@
                     <div class="w-full px-4 mb-10 lg:w-1/2">
                         <h4 class="font-bold uppercase text-dark text-2xl mb-3 lg:text-2xl dark:text-white">Tentang saya</h4>
                         <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-3xl dark:text-white" >Yuk, Belajar web programing bersama saya!</h2>
-                        <p class="font-medium text-deskripsi text-base max-w-xl lg:text-lg dark:text-deskripsi1">Saya lulusan S1-Ilmu Komunikasi Universitas Majalengka dengan sedikit pengalaman kerja di Bandara BIJB Majalengka sebagai Customer Service Citilink, setelah itu akhirnya 
+                        <p class="font-medium text-deskripsi text-sm max-w-xl lg:text-lg dark:text-deskripsi1">Saya lulusan S1-Ilmu Komunikasi Universitas Majalengka dengan sedikit pengalaman kerja di Bandara BIJB Majalengka sebagai Customer Service Citilink, setelah itu akhirnya 
                             memutuskan beralih pekerjaan sebagai IT Support dari semenjak setelah COVID-19 sampai saat ini, sekarang saya sedang mempelajari Web Programing secara autodidak dari Youtube, Buku, Artikel tulisan dan lainnya untuk menambah skill dan berharap mendapatkan ilmu baru yang bermafaat untuk kedepannya. </p>
                     </div>
                         <div class="w-full px-4 lg:w-1/2">
@@ -134,28 +134,28 @@
             <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
                 <div class="mb-12 p-4 md:w-1/2">
                     <div class="rounded-md shadow-md overflow-hidden">
-                        <img src="./img/p1.png" alt="Landing Page" width="w-full">
+                        <img src="./dist/img/p1.png" alt="Landing Page" width="w-full">
                     </div>
                     <h3 class="font-semibold text-xl text-primary mt-5 mb-3 dark:text-white">Landing Page Ampan</h3>
                     <p class="font-medium text-base text-deskripsi dark:text-deskripsi1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vero accusamus reprehenderit molestiae, ducimus corrupti.</p>
                 </div>
                  <div class="mb-12 p-4 md:w-1/2">
                     <div class="rounded-md shadow-md overflow-hidden">
-                        <img src="./img/p2.png" alt="E-comerce" width="w-full">
+                        <img src="./dist/img/p2.png" alt="E-comerce" width="w-full">
                     </div>
                     <h3 class="font-semibold text-xl text-primary mt-5 mb-3 dark:text-white">ecomerse</h3>
                     <p class="font-medium text-base text-deskripsi dark:text-deskripsi1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vero accusamus reprehenderit molestiae, ducimus corrupti.</p>
                 </div>
                  <div class="mb-12 p-4 md:w-1/2">
                     <div class="rounded-md shadow-md overflow-hidden">
-                        <img src="./img/p3.png" alt="techincal Documentation" width="w-full">
+                        <img src="./dist/img/p3.png" alt="techincal Documentation" width="w-full">
                     </div>
                     <h3 class="font-semibold text-xl text-primary mt-5 mb-3 dark:text-white">techincal Documentation</h3>
                     <p class="font-medium text-base text-deskripsi dark:text-deskripsi1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vero accusamus reprehenderit molestiae, ducimus corrupti.</p>
                 </div>
                  <div class="mb-12 p-4 md:w-1/2">
                     <div class="rounded-md shadow-md overflow-hidden">
-                        <img src="./img/p4.png" alt="Tribute Page" width="w-full">
+                        <img src="./dist/img/p4.png" alt="Tribute Page" width="w-full">
                     </div>
                     <h3 class="font-semibold text-xl text-primary mt-5 mb-3 dark:text-white">Tribute Page</h3>
                     <p class="font-medium text-base text-deskripsi dark:text-deskripsi1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vero accusamus reprehenderit molestiae, ducimus corrupti.</p>
@@ -181,14 +181,14 @@
             <div class="w-full px-4">
                 <div class="flex flex-wrap items-center justify-center">
                     <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-                        <img src="./img/clients/Gojek.svg" alt="gojek">
+                        <img src="./dist/img/clients/Gojek.svg" alt="gojek">
                     </a>
                     <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-                        <img src="./img/clients/Google.svg" alt="Google" width="50">
+                        <img src="./dist/img/clients/Google.svg" alt="Google" width="50">
                     </a><a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-                        <img src="./img/clients/Tokopedia.svg" alt="Tokopedia" width="120">
+                        <img src="./dist/img/clients/Tokopedia.svg" alt="Tokopedia" width="120">
                     </a><a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-                        <img src="./img/clients/Lazada.svg" alt="Lazada" width="140">
+                        <img src="./dist/img/clients/Lazada.svg" alt="Lazada" width="140">
                     </a>
                 </div>
             </div>
@@ -241,27 +241,27 @@
                 <div class="w-full px-4 mb-12 text-slate-300 font-medium md:text-center md:w-1/3 md:px-20">
                     <h2 class="font-bold text-2xl text-white mb-5">Ampan</h2>
                     <h3 class="font-bold text-xl mb-2">Hubungi Saya</h3>
-                    <p>ampan.0919@gmail.com</p>
-                    <p>Jl.Batik Pekalongan No.26 Sukaluyu</p>
-                    <p>Bandung</p>
+                    <p class="text-sm">ampan.0919@gmail.com</p>
+                    <p class="text-sm">Jl.Batik Pekalongan No.26 Sukaluyu</p>
+                    <p class="text-sm">Bandung</p>
                 </div>
                 <div class="w-full px-4 mb-12 md:w-1/3">
                     <h3 class="font-bold text-white text-2xl mb-3 ml-auto md:text-center">Tautan</h3>
                     <ul class="text-slate-300 font-semibold ml-auto md:text-center">
                         <li>
-                            <a href="#home" class="inline-block text-base hover:text-secondry mb-3">Beranda</a>
+                            <a href="#home" class="inline-block text-sm hover:text-secondry mb-3 ">Beranda</a>
                         </li>
                         <li>
-                            <a href="#about" class="inline-block text-base hover:text-secondry mb-3">Tentang Saya</a>
+                            <a href="#about" class="inline-block text-sm hover:text-secondry mb-3">Tentang Saya</a>
                         </li>
                         <li>
-                            <a href="#portfolio" class="inline-block text-base hover:text-secondry mb-3">Portfolio</a>
+                            <a href="#portfolio" class="inline-block text-sm hover:text-secondry mb-3">Portfolio</a>
                         </li>
                         <li>
-                            <a href="#clients" class="inline-block text-base hover:text-secondry mb-3">Clients</a>
+                            <a href="#clients" class="inline-block text-sm hover:text-secondry mb-3">Clients</a>
                         </li>
                         <li>
-                            <a href="#contact" class="inline-block text-base hover:text-secondry mb-3">Contact</a>
+                            <a href="#contact" class="inline-block text-sm hover:text-secondry mb-3">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -269,16 +269,16 @@
                     <h3 class="font-bold mb-3 text-white text-2xl ml-auto md:text-center">Sosial Media</h3>
                     <ul class="text-slate-300 font-semibold ml-auto mb-3 md:text-center">
                         <li>
-                            <a href="https://www.instagram.com/ampan.09/" class="inline-block text-base hover:text-secondry mb-3">Instagram</a>
+                            <a href="https://www.instagram.com/ampan.09/" class="inline-block text-sm hover:text-secondry mb-3">Instagram</a>
                         </li>
                         <li>
-                            <a href="https://www.tiktok.com/@ampan019" class="inline-block text-base hover:text-secondry mb-3">Tik Tok</a>
+                            <a href="https://www.tiktok.com/@ampan019" class="inline-block text-sm hover:text-secondry mb-3">Tik Tok</a>
                         </li>
                         <li>
-                            <a href="https://web.facebook.com/ampan.anrj/" class="inline-block text-base hover:text-secondry mb-3">Facebook</a>
+                            <a href="https://web.facebook.com/ampan.anrj/" class="inline-block text-sm hover:text-secondry mb-3">Facebook</a>
                         </li>
                         <li>
-                            <a href="https://github.com/ampan19" class="inline-block text-base hover:text-secondry mb-3">GitHub</a>
+                            <a href="https://github.com/ampan19" class="inline-block text-sm hover:text-secondry mb-3">GitHub</a>
                         </li>
                     </ul>
                 </div>
@@ -358,6 +358,6 @@
     <!-- back to top end -->
 
 
-<script src="./src/js/script.js"></script>
+<script src="./dist/js/script.js"></script>
 </body>
 </html>

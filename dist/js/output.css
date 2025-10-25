@@ -1375,6 +1375,14 @@ body {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+.dark\:hover\:bg-secondry:hover:is(.dark *) {
+  background-color: oklch(70.4% 0.14 182.503);
+}
+
+.dark\:hover\:text-secondry:hover:is(.dark *) {
+  color: oklch(70.4% 0.14 182.503);
+}
+
 .group:hover .dark\:group-hover\:text-dark:is(.dark *) {
   color: oklch(26.8% 0.007 34.298);
 }
